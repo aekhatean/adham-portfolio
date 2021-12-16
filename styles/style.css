@@ -1,0 +1,42 @@
+:root {
+  --clr-wm: #de595b;
+  --clr-ow: #fbfbf8;
+  --clr-pw: #fae3e4;
+}
+
+body {
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      var(--clr-ow) 20%,
+      var(--clr-ow) 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        var(--clr-ow) 20%,
+        var(--clr-ow) 80%,
+        transparent 80%,
+        transparent
+      )
+      50px 50px,
+    linear-gradient(var(--clr-pw) 8px, transparent 8px) 0 -4px,
+    linear-gradient(90deg, var(--clr-pw) 8px, transparent 8px) -4px 0;
+  background-color: var(--clr-ow);
+  background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+#fullpage > section {
+  min-height: 100vh;
+}
+
+#fullpage > section:nth-child(even) {
+  background-color: var(--clr-wm);
+  color: var(--clr-ow);
+}
+
+.space {
+  padding: var(--space, 1rem);
+}
