@@ -158,7 +158,9 @@ body {
   transition: 0.3s;
 }
 
-.service-hover:hover {
+.service-hover:hover,
+.service-hover:focus,
+.service-hover:active {
   background-color: var(--clr-wm);
   color: var(--clr-ow);
 }
@@ -168,4 +170,15 @@ body {
 .invalid-feedback,
 #invalidCheck {
   color: #ffc107 !important;
+}
+
+@media (min-width: 45rem) {
+  #contact-me .h1 {
+    margin-top: 2rem !important;
+    margin-bottom: 8rem !important;
+  }
+
+  #contact-me textarea {
+    height: 20rem;
+  }
 }
