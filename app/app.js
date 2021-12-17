@@ -24,4 +24,54 @@ $(document).ready(function () {
       });
     });
   });
+
+  // Create cards for each skill
+  function createSkillNode(skillInfo) {
+    const skillNode = $("<div></div>");
+    skillNode.attr("class", "card text-center");
+    skillNode.html(`
+    <div class="card-body">
+      <div class="card-title">${skillInfo.icons}</div>
+      <div class="card-text">${skillInfo.title}</div>
+    </div>`);
+
+    return skillNode;
+  }
+
+  // Grab skills section
+  const skillsContainer = $("#skills-contaier");
+
+  // Add skills to skills section
+  fetch("../data/skills.json")
+    .then((res) => res.json())
+    .then((skillsData) => {
+      for (const skill of skillsData) {
+        skillsContainer.append(createSkillNode(skill)[0]);
+      }
+    });
+
+  // Contact Form validation
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    "use strict";
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll(".needs-validation");
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener(
+        "submit",
+        function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+
+          form.classList.add("was-validated");
+        },
+        false
+      );
+    });
+  })();
 });

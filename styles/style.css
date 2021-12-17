@@ -20,7 +20,7 @@
   background-color: var(--clr-pw);
 }
 
-.bc-wm {
+.bc-transparent {
   border-color: transparent;
 }
 
@@ -74,6 +74,7 @@ body {
 
 #fp-nav > ul > li > a > span {
   background-color: var(--clr-dk);
+  opacity: 80%;
 }
 
 .fp-tooltip {
@@ -160,4 +161,11 @@ body {
 .service-hover:hover {
   background-color: var(--clr-wm);
   color: var(--clr-ow);
+}
+
+/* Contact me section styles */
+
+.invalid-feedback,
+#invalidCheck {
+  color: #ffc107 !important;
 }

@@ -37,7 +37,7 @@
     <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-ow">
       <div class="container">
         <a class="navbar-brand" href="#welcome">
-          <img src="/assets/ak-logo.svg" alt="Adham Khatean's logo" width="60" height="60" class="d-inline-block align-text-top">
+          <img src="/assets/ak-logo.svg" alt="Adham Khatean's logo" width="30" height="28" class="d-inline-block align-text-top">
         </a>
         <button
           class="navbar-toggler"
@@ -77,6 +77,7 @@
       </div>
     </nav>
     <!-- Navbar End -->
+
     <!-- main page start -->
     <main id="fullpage">
       <section class="section" id="welcome">
@@ -147,7 +148,7 @@
 
           <div class="row">
             <div class="col-md-4">
-              <div class="card mb-2 bg-ow service-hover bc-wm">
+              <div class="card mb-2 bg-ow service-hover bc-transparent">
                 <div class="card-body">
                   <h5 class="card-title">Full-Stack Web Development</h5>
                   <br />
@@ -159,7 +160,7 @@
             </div>
 
             <div class="col-md-4">
-              <div class="card mb-2 bg-ow service-hover bc-wm">
+              <div class="card mb-2 bg-ow service-hover bc-transparent">
                 <div class="card-body">
                   <h5 class="card-title">eCommerce webApps</h5>
                   <br />
@@ -170,7 +171,7 @@
             </div>
 
             <div class="col-md-4">
-              <div class="card mb-2 bg-ow service-hover bc-wm">
+              <div class="card mb-2 bg-ow service-hover bc-transparent">
                 <div class="card-body">
                   <h5 class="card-title">Support & Maintenance</h5>
                   <br />
@@ -184,14 +185,49 @@
       </section>
 
       <section class="section" id="skills">
-        <!-- Create tabs here -->
-        <div class="container">Skills</div>
+        <div id="skills-container" class="container">
+
+        </div>
       </section>
       <section class="section" id="study-cases">
         <div class="container">portfolio/ study cases</div>
       </section>
-      <section class="section" id="contact-me">
-        <div class="container">contact me</div>
+      <section class="section active" id="contact-me">
+        <div class="container">
+          <br />
+          <p class="h1">Contact me</p>
+          <br />
+          <br />
+          <br />
+          <form id="contact-form" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Your name</label>
+              <input type="text" placeholder="First Last" class="form-control" id="validationCustom01" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomSubject" class="form-label">Message subject</label>
+              <input type="text" placeholder="Message subject" class="form-control" id="validationCustomSubject" required>
+            </div>
+
+            <div class="col-md-4">
+              <label for="validationCustomEmail" class="form-label">Your email</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="email" placeholder="handle@email.com" class="form-control" id="validationCustomEmail" aria-describedby="inputGroupPrepend" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label">Your message</label>
+              <textarea class="form-control" id="validationTextarea" placeholder="Enter your email body here" required style="height: 15rem"></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-info text-light" type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <!-- main page End -->
