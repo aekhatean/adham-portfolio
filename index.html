@@ -22,42 +22,172 @@
       href="ico/favicon-16x16.png"
     />
     <link rel="manifest" href="ico/site.webmanifest" />
-    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles/fullpage.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="app/jquery-3.1.1.js"></script>
-    <script src="app/bootstrap.min.js"></script>
-    <script src="app/fullpage.min.js"></script>
-    <script src="app/fullpage.extensions.min.js"></script>
-    <script src="app/app.js"></script>
     <title>Adham Khatean's Portfolio</title>
   </head>
   <body>
     <!-- Navbar start -->
-    <nav id="nav-bar">
-      <section class="container">Hi</section>
+    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-ow">
+      <div class="container">
+        <a class="navbar-brand" href="#welcome">
+          <img src="/assets/ak-logo.svg" alt="Adham Khatean's logo" width="60" height="60" class="d-inline-block align-text-top">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#welcome"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">My services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">My skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#study-cases">Study cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- Navbar End -->
-
     <!-- main page start -->
     <main id="fullpage">
-      <section class="section" id="cover">
-        <div class="container">cover</div>
-      </section>
-      <section class="section" id="about-me">
-        <div class="container">about me</div>
-      </section>
-      <section class="section" id="services">
-        <div class="container">services</div>
-      </section>
-      <section class="section active" id="skills">
+      <section class="section" id="welcome">
         <div class="container">
-          <p title="Skills Adham have" style="background-color: aqua">skills</p>
-          <div class="slide">skills1</div>
-          <div class="slide">skills2</div>
+          <div class="row">
+            <div class="col-md-9">
+              <p class="h1">
+                I create enjoyable experience for your customers.
+              </p>
+              <br />
+              <p class="fs-4">
+                Making the internet a little bit better by creating empowering
+                solutions for creators, small businesses, and ambitious startups
+                is my job. As a matter of fact it is my passion!
+              </p>
+            </div>
+            <div class="col-md-3">
+              <img
+                class="robo-typing"
+                src="/assets/enjoy.svg"
+                alt="Robo typing on laptop"
+              />
+            </div>
+          </div>
+          <!-- <div class="row justify-content-md-center">
+            <div class="col-md-12 justify-content-md-center">
+              <span class="scroll-icon">
+                <span class="scroll-icon__dot"></span>
+              </span>
+              <p>Scroll to learn more</p>
+            </div>
+          </div> -->
         </div>
       </section>
-      <section class="section" id="portfolio">
+      <section class="section" id="about-me">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <p class="h1">Who am I?</p>
+              <br />
+              <p class="fs-4">
+                Adham is a full-stack web developer with a passion for learning
+                and experimenting with different technologies and tools.
+                <br />
+                Professionally worked with JavaScript, and Python with knowledge
+                of Typescript.
+                <br />Also used popular front-end JS frameworks and libraries
+                like Vue.js, React.js alongside with their ecosystem tools like
+                Redux and vuex.<br />And back-end frameworks such as Django, and
+                Flask.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <img
+                class="robo-hi"
+                src="/assets/hello.svg"
+                alt="Robo says hello"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <p class="h1">My services</p>
+          <br />
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2 bg-ow service-hover bc-wm">
+                <div class="card-body">
+                  <h5 class="card-title">Full-Stack Web Development</h5>
+                  <br />
+                  <p class="card-text">
+                    I can develop a fully fledged website, handling the client side, and server side. This includes creating the UI/UX and coding the design, designing and creating the database and necessary APIs. If you do not know what any of this means, don't worry I will handle it for you!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-2 bg-ow service-hover bc-wm">
+                <div class="card-body">
+                  <h5 class="card-title">eCommerce webApps</h5>
+                  <br />
+                  <p class="card-text">
+                    As more and more consumers transfer their shopping habits to the digital realm, companies continue to put their efforts into developing attractive and engaging ecommerce sites that drive conversions. Do not let them beat you into it. And let's create and/or utilize all the essential tools for your business to grow!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-2 bg-ow service-hover bc-wm">
+                <div class="card-body">
+                  <h5 class="card-title">Support & Maintenance</h5>
+                  <br />
+                  <p class="card-text">
+                    Wasted time is a wasted money, never leave your website down or faulty, customers might come anytime and you need to be able to be there for them. let's keep your website maintened!
+                  </p>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+      <section class="section" id="skills">
+        <!-- Create tabs here -->
+        <div class="container">Skills</div>
+      </section>
+      <section class="section" id="study-cases">
         <div class="container">portfolio/ study cases</div>
       </section>
       <section class="section" id="contact-me">
@@ -66,10 +196,16 @@
     </main>
     <!-- main page End -->
 
-    <!-- Footer start -->
-    <footer></footer>
-    <!-- Footer End -->
-
-    <div class="space"></div>
+    <!-- Scripts start here -->
+    <script src="app/jquery-3.1.1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app/fullpage.min.js"></script>
+    <script src="app/fullpage.extensions.min.js"></script>
+    <script src="app/app.js"></script>
+    <!-- Scripts end here -->
   </body>
 </html>

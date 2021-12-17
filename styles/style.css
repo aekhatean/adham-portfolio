@@ -1,7 +1,27 @@
 :root {
+  /* Colors */
+  --clr-dk: #4a4a4a;
   --clr-wm: #de595b;
   --clr-ow: #fbfbf8;
-  --clr-pw: #fae3e4;
+  --clr-pw: #fdeff0af;
+}
+
+/* Utilities */
+.bg-dk {
+  background-color: var(--clr-dk);
+}
+.bg-wm {
+  background-color: var(--clr-wm);
+}
+.bg-ow {
+  background-color: var(--clr-ow);
+}
+.bg-pw {
+  background-color: var(--clr-pw);
+}
+
+.bc-wm {
+  border-color: transparent;
 }
 
 body {
@@ -28,15 +48,116 @@ body {
   background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }
 
-#fullpage > section {
-  min-height: 100vh;
+/* Navbar styles */
+#nav-bar {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
 }
 
+@media (min-width: 45rem) {
+  .navbar li {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+/* Fullpage  specic styles */
 #fullpage > section:nth-child(even) {
   background-color: var(--clr-wm);
   color: var(--clr-ow);
 }
 
-.space {
-  padding: var(--space, 1rem);
+#fullpage > section:nth-child(odd) {
+  color: var(--clr-dk);
+}
+
+#fp-nav > ul > li > a > span {
+  background-color: var(--clr-dk);
+}
+
+.fp-tooltip {
+  background-color: var(--clr-dk);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/* Bootstrap adjusting to fullpage */
+/* Welcom section styles */
+.robo-typing {
+  max-width: 26rem;
+}
+
+@keyframes scroll_2 {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0.75em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.scroll-icon__dot {
+  display: block;
+  position: absolute;
+  left: 50%;
+  background: var(--clr-dk);
+  height: 0.5em;
+  width: 0.5em;
+  top: 0.6em;
+  margin-left: -0.25em;
+  border-radius: 50%;
+  transform-origin: top center;
+  backface-visibility: hidden;
+  animation: scroll_2 2s ease-out infinite;
+}
+
+/* General icon style */
+.scroll-icon {
+  display: block;
+  position: relative;
+  height: 3rem;
+  width: 1.5rem;
+  border: 0.2rem solid var(--clr-dk);
+  border-radius: 1em;
+}
+
+/* About me section styles */
+.robo-hi {
+  width: clamp(3rem, 100%, 15rem);
+  object-fit: contain;
+  height: 100%;
+}
+
+@media (min-width: 35rem) {
+  .robo-hi {
+    width: clamp(15rem, 100%, 18rem);
+    height: clamp(15rem, 100%, 36rem);
+  }
+}
+
+@media (min-width: 40rem) {
+  .robo-hi {
+    width: clamp(15rem, 100%, 40rem);
+    height: clamp(15rem, 100%, 40rem);
+  }
+}
+
+/* Services section styles */
+.service-hover {
+  transition: 0.3s;
+}
+
+.service-hover:hover {
+  background-color: var(--clr-wm);
+  color: var(--clr-ow);
 }
