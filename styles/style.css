@@ -2,6 +2,7 @@
   /* Colors */
   --clr-dk: #4a4a4a;
   --clr-wm: #de595b;
+  --clr-wm-op: #d35355;
   --clr-ow: #fbfbf8;
   --clr-pw: #fdeff0af;
 }
@@ -87,6 +88,22 @@ body {
 /* Welcom section styles */
 .robo-typing {
   max-width: 26rem;
+}
+
+#welcome-btns {
+  justify-content: center;
+}
+
+.welcome-btn {
+  width: clamp(3rem, 70%, 20rem);
+}
+
+.btn-wm {
+  background-color: var(--clr-wm);
+}
+
+.btn-wm:hover {
+  background-color: var(--clr-wm-op);
 }
 
 @keyframes scroll_2 {
