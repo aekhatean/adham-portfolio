@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Space travel agency",
+    "url": "https://github.com/aekhatean/space-travel",
+    "img": "../assets/projects/space-travel.jpg"
+  },
+  {
+    "title": "Cyptocurrencies watcher",
+    "url": "https://github.com/aekhatean/crypto-everything",
+    "img": "../assets/projects/crypto-everything.png"
+  },
+  {
+    "title": "eCommerce website",
+    "url": "https://github.com/aekhatean/iti-ecommerce",
+    "img": "../assets/projects/ecommerce.png"
+  }
+]

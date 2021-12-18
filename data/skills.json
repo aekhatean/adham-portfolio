@@ -1,77 +1,62 @@
 [
   {
+    "title": "Python",
+    "icons": "../assets/skills/python.svg"
+  },
+  {
+    "title": "Node.js",
+    "icons": "../assets/skills/nodejs.svg"
+  },
+  {
     "title": "JavaScript",
-    "icons": "<i class='fab fa-js' style='color: #FCDC00'></i>",
-    "desc": ""
+    "icons": "../assets/skills/javascript.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "TypeScript",
+    "icons": "../assets/skills/typescript.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "HTML5 & CSS3",
+    "icons": "../assets/skills/html5.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "Sass/Scss",
+    "icons": "../assets/skills/sass.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "Bootstrap",
+    "icons": "../assets/skills/bootstrap.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "Material UI",
+    "icons": "../assets/skills/mui.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "React.js & Redux",
+    "icons": "../assets/skills/react.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "Vue.js & Vuex",
+    "icons": "../assets/skills/vue.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "Django",
+    "icons": "../assets/skills/django.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "Flask",
+    "icons": "../assets/skills/flask.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "Jasmine",
+    "icons": "../assets/skills/jasmine.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "Git & Github",
+    "icons": "../assets/skills/git.svg"
   },
   {
-    "title": "",
-    "icons": "",
-    "desc": ""
-  },
-  {
-    "title": "",
-    "icons": "",
-    "desc": ""
-  },
-  {
-    "title": "",
-    "icons": "",
-    "desc": ""
+    "title": "npm",
+    "icons": "../assets/skills/npm.svg"
   }
 ]

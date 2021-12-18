@@ -25,21 +25,61 @@ $(document).ready(function () {
     });
   });
 
+  /**
+   * Services Section
+   */
+  function createServiceNode(serviceInfo) {
+    const serviceNode = $("<div></div>");
+    serviceNode.attr("class", "col-md-4");
+    serviceNode.html(`
+      <div class="card mb-2 bg-ow service-hover bc-transparent">
+        <div class="card-body">
+          <h5 class="card-title">${serviceInfo.title}</h5>
+          <br />
+          <p class="card-text">
+            ${serviceInfo.desc}
+          </p>
+        </div>
+      </div>`);
+
+    return serviceNode;
+  }
+
+  // Grab skills section
+  const servicesContainer = $("#services-container");
+
+  // Add services to services section
+  fetch("../data/services.json")
+    .then((res) => res.json())
+    .then((servicesData) => {
+      for (const service of servicesData) {
+        servicesContainer.append(createServiceNode(service)[0]);
+      }
+    });
+
+  /**
+   * Skills section
+   */
   // Create cards for each skill
   function createSkillNode(skillInfo) {
     const skillNode = $("<div></div>");
-    skillNode.attr("class", "card text-center");
+    skillNode.attr(
+      "class",
+      "card text-center mb-1 col-md-2 m-1 skill-card skill-hover bg-ow"
+    );
     skillNode.html(`
     <div class="card-body">
-      <div class="card-title">${skillInfo.icons}</div>
-      <div class="card-text">${skillInfo.title}</div>
+      <div>
+        <img class="skill-icon" src="${skillInfo.icons}" alt="${skillInfo.title}"/>
+      </div>
+      <div class="card-title">${skillInfo.title}</div>
     </div>`);
 
     return skillNode;
   }
 
   // Grab skills section
-  const skillsContainer = $("#skills-contaier");
+  const skillsContainer = $("#skills-container");
 
   // Add skills to skills section
   fetch("../data/skills.json")
@@ -47,6 +87,37 @@ $(document).ready(function () {
     .then((skillsData) => {
       for (const skill of skillsData) {
         skillsContainer.append(createSkillNode(skill)[0]);
+      }
+    });
+
+  /**
+   * Study cases section
+   */
+  function createcaseNode(caseInfo) {
+    const caseNode = $("<div></div>");
+    caseNode.attr("class", "col-md-4 col-case");
+    caseNode.html(`
+    <div class="card bg-dark text-white">
+    <a href="${caseInfo.url}" target="_blank" class="text-white">
+      <img src="${caseInfo.img}" class="card-img card-img-mod" alt="${caseInfo.title}">
+      <div class="card-img-overlay">
+        <p class="fs-5 card-title text-center show-on-hover">${caseInfo.title}</p>
+      </div>
+    </a>
+  </div>`);
+
+    return caseNode;
+  }
+
+  // Grab skills section
+  const casesContainer = $("#cases-container");
+
+  // Add cases to cases section
+  fetch("../data/cases.json")
+    .then((res) => res.json())
+    .then((casesData) => {
+      for (const caseData of casesData) {
+        casesContainer.append(createcaseNode(caseData)[0]);
       }
     });
 
