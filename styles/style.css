@@ -94,6 +94,13 @@ body {
   justify-content: center;
 }
 
+@media (min-width: 45rem) {
+  #welcome-btns {
+    margin-top: 3rem;
+    justify-content: left;
+  }
+}
+
 .welcome-btn {
   width: clamp(3rem, 70%, 20rem);
 }
