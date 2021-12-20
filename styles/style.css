@@ -86,13 +86,6 @@ body {
 
 /* Bootstrap adjusting to fullpage */
 /* Welcom section styles */
-.robo-typing {
-  max-width: 26rem;
-  animation-name: robo-floating;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-
 @keyframes robo-floating {
   0% {
     transform: translateY(20px);
@@ -102,6 +95,26 @@ body {
   }
   100% {
     transform: translateY(20px);
+  }
+}
+
+.robo-typing {
+  position: relative;
+  max-width: 26rem;
+  animation-name: robo-floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 35rem) {
+  .robo-typing {
+    width: clamp(17rem, 100%, 40rem);
+  }
+}
+
+@media (min-width: 55rem) {
+  .robo-typing {
+    width: clamp(25rem, 60%, 40rem);
   }
 }
 
