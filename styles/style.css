@@ -88,6 +88,21 @@ body {
 /* Welcom section styles */
 .robo-typing {
   max-width: 26rem;
+  animation-name: robo-floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes robo-floating {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
 }
 
 #welcome-btns {
