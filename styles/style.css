@@ -102,7 +102,7 @@ body {
   position: relative;
   max-width: 26rem;
   animation-name: robo-floating;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
